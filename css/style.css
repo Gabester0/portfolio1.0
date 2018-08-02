@@ -1,0 +1,282 @@
+body {
+    font-family:Lato, sans-serif;
+    color:#212121;
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+  }
+
+/***** Reuseable Components ******/  
+
+h1 {
+  text-align:center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3.5vw;
+}
+
+h3,
+h4 {
+  text-align:center;
+}
+
+a {
+  text-decoration: none;
+}
+  
+.container {
+  display: grid;
+  widows: 90%;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-rows: repeat(auto-fill, 1fr);
+  grid-gap: 5vw 1%;
+  margin:0 auto 4% auto;
+  padding: 0 0 5% 0;
+}
+
+
+
+
+/* ----------------------Navigation------------*/
+
+.navi hr {
+  height:10px;
+  margin: 0;
+  padding: 0;
+  width:100%;
+  /* overflow:hidden;*/
+}
+
+.navi {
+  margin-bottom: 10%;
+  font-size: 1.5vw;
+}
+
+.row {
+  margin: -0.05rem 0rem;
+  padding: 0.25rem 0rem;
+  background-color: #212121;
+  height: 43px;
+  overflow:none;
+}
+
+.navi ul {
+  float:center;
+  width:95%;
+  padding:0;
+  margin: 4px 0 0 0;
+}
+
+.navi li {
+  margin-left:30px;
+  float: right;
+}
+
+.btn:link,
+.btn:visited  {
+  color: white;
+  text-decoration:none;
+  transition: color .5s;
+}
+
+.btn:hover,
+.btn:active {
+  color:silver;
+  text-decoration:none;
+  transition: color .5s;
+}
+
+
+/*****  About me (Landing Page)  ******/  
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 75vw;
+  margin: auto auto 10vh auto;
+}
+
+.item1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 5.25vw;
+  width: 60%;
+}
+
+.item1 h1 {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.item2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 3vw;
+  width: 40%;
+}
+
+.item2 p {
+  margin: 0;
+  display: flex;
+  text-align: center;
+}
+
+span {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*-----------------------------Projects-----*/
+
+section{
+    background: 
+      linear-gradient(
+        rgb(239, 239, 239), 
+        rgb(239, 239, 239), 
+        rgba(82, 82, 82, 0.45),
+        rgb(239, 239, 239),       
+        rgb(239, 239, 239)
+      );
+    padding: 5vw 0;
+  }
+
+  .overlay{
+    height: 196.88px;
+    width: 350px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .hoverText {
+   color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .item {
+   margin: auto;
+   position:relative;
+   padding: 2%;
+  }
+  
+  .item img {
+   height: auto;
+   width: 350px;
+   display: block;
+  }
+  
+  .itemImg {
+   background-color: black;
+   height: 196.88px;
+   width: 350px;
+   position: relative;
+   bottom: 0;
+  }
+  
+  .itemImg:hover .overlay {
+   opacity:0.8;
+  }
+  
+  .shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   }
+ 
+
+  /*************  Contact  ************/
+
+  .foot {
+   background-color: #efefef;
+   padding:0;
+   width: 370px;
+   margin:auto;
+  }
+  
+  .contact hr {
+    margin:0 100px ;
+  }
+  
+  .contact {
+    width: 50%;
+    margin:0 auto;
+    padding: 100px 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+
+  .contactH2 {
+    grid-column: 2/3;
+  }
+  
+  .itema {
+    grid-row: 2/3;
+    margin: auto;
+  }
+  
+  .contact i {
+    font-size:4vw;
+    color:#212121;
+  }
+  
+  #lBut {
+    color: black;
+    font-size:70%;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin: auto;    
+  }
+  
+  .igit:link,
+  .igit:visited {
+    transition: .5s;
+  }
+  
+  .igit:hover {
+    color: #999;
+  }
+  
+  .ifree:link,
+  .ifree:visited {
+    transition: .5s;
+  }
+  
+  .ifree:hover {
+    color: darkgreen;
+  }
+  
+  .ilink:link,
+  .ilink:visited {
+    transition: 0.5s;
+  }
+  
+  .ilink:hover {
+    color: #0077b5;
+  }
+  
+    /****************    Footer  ***************/
+  
+  .bar {
+    background: #00b09b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  footer p {
+    width:500px;
+    text-align:center;
+    margin:0 auto;
+    padding:50px 0;
+  }

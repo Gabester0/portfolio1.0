@@ -1,0 +1,44 @@
+@media (max-width: 440px){
+    .overlay{
+        height: 196.88px;
+        width: 350px;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+      }
+      
+      .hoverText {
+       color: white;
+        font-size: 18px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+      .item {
+       margin: auto;
+       position:relative;
+       padding: 2%;
+      }
+      
+  /*    .item img {
+       height: auto;
+       width: 350px;
+       display: block;
+      }
+    */  
+      .itemImg {
+       background-color: black;
+       height: auto;
+/*       height: 196.88px;*/
+       width: 350px;
+       position: relative;
+       bottom: 0;
+      }
+      
+}
