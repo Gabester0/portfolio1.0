@@ -145,8 +145,8 @@ section{
   }
 
   .overlay{
-    height: 196.88px;
-    width: 350px;
+    height: 100%;
+    width: 100%;
     opacity: 0;
     transition: .5s ease;
     background-color: black;
@@ -156,7 +156,6 @@ section{
   
   .hoverText {
    color: white;
-    font-size: 18px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -173,14 +172,14 @@ section{
   
   .item img {
    height: auto;
-   width: 350px;
+   width: 100%;
    display: block;
   }
   
   .itemImg {
    background-color: black;
-   height: 196.88px;
-   width: 350px;
+   height: auto;
+   width: 100%;
    position: relative;
    bottom: 0;
   }
