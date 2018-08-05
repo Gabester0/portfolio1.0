@@ -1,3 +1,18 @@
 @media (max-width: 440px){
-      
+    .item1 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .item2 {
+        font-size: 4vw;
+    }
+    .contact {
+        font-size: 5vw;
+    }
+    .contact i {
+        font-size: 5vw;
+    }
+    #lBut {
+        margin-top: 4vw;
+    }
 }

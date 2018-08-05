@@ -1,3 +1,4 @@
+
 body {
     font-family:Lato, sans-serif;
     color:#212121;
@@ -274,7 +275,7 @@ section{
   }
 
   footer p {
-    width:500px;
+    width: 50vw;;
     text-align:center;
     margin:0 auto;
     padding:50px 0;
