@@ -1,0 +1,27 @@
+10/7/18 - Opened updateWork branch
+
+Goals:
+    [] - Add new projects from FreeCodeCamp Responsive Web Design Certification
+    [] - Modify grid layout to include the FCC Certification and link to these projects.
+    [] - Find a way to include a story style description of the project and how you made
+            the project.  Create a better design to share a larger story paragraph.  
+        //idea:\\ 
+            [] - Remove the nesting <a> tags from each .item div.  
+            [] - Remove the on-hover text from the entire project-details to 'click for details...'
+            [] - onClick either takes us to another page with story-style screenshots and existing
+                    technical details along with story of why, how, and what were the challenges and
+                    how I overcame them (mini-resume job story).  Tell the story of your project in 
+                    phases. Discovery. Exploration. Design.
+                    (https://ux.shopify.com/how-to-level-up-your-portfolio-5795173a8f48)
+            [] - Or a modal screen size with the same with an x icon in top corner.  
+    [] - Remove (for now) student course projects.  
+    [] - Modify/improve/adapt current student projects.
+    [] - Re-include these projects in your portfolio with a project story that focuses on   
+            how you transformed the origin tutorial project.  
+    [] - Make sure you have font-weights imported.  Use a lighter font for h1 with name.  
+    [] - Maybe use Lato or another font.  
+    [] - Make image flip on click and show a different image.  and the text from that.
+    [] - Behind images are lower z-index.  Both front and background images rotate-x 180
+    degrees.  animation.  
+    [] - Add filter options to search projects by language  Makes it easy for recruiters 
+    to see quickly if you have work to back up languages on your resume.  
