@@ -15,7 +15,8 @@ body {
 /***** Reuseable Components ******/  
 
 h1 {
-  text-align:center;
+  text-align:left;
+  font-weight: 300;
 }
 
 h2 {
@@ -129,7 +130,7 @@ a {
 .item2 p {
   margin: 0;
   display: flex;
-  text-align: center;
+  text-align: left;
 }
 
 span {
