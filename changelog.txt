@@ -5,7 +5,8 @@ Goals:
                 [x] - Update Links for Twitch It 3.0 to Codepen
                 [x] - Update Link for Survey form, GitGuidance, Product Landing Page on Github
                 [x] - Load images for Survey-form, Product landing page, and GitGuidance to postImgs.
-        
+                [x] - Include BulletinProject
+        [] - Include Pull Request for Responsive version of Pubstandards?
     [] - Modify grid layout to include the FCC Certification and link to these projects.
     [] - Find a way to include a story style description of the project and how you made
             the project.  Create a better design to share a larger story paragraph.  
