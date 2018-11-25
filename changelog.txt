@@ -7,8 +7,9 @@ Goals:
                 [x] - Load images for Survey-form, Product landing page, and GitGuidance to postImgs.
                 [x] - Include BulletinProject
         [] - Include Pull Request for Responsive version of Pubstandards?
-    [] - Modify grid layout to include the FCC Certification and link to these projects.
-    [] - Find a way to include a story style description of the project and how you made
+                [x] - Include Front-End work for JoshBoyd.  
+                [x] - Modify grid layout to include the FCC Certification and link to these projects.
+        [] - Find a way to include a story style description of the project and how you made
             the project.  Create a better design to share a larger story paragraph.  
         //idea:\\ 
             [] - Remove the nesting <a> tags from each .item div.  
