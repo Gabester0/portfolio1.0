@@ -1,7 +1,7 @@
 # portfolio1.0
 This is the newest version of my portfolio site:
 
- https://gabester0.github.io/portfolio1.0/
+ https://gabester.tech/
 
 8/2/18
 This is my first proper experience using GIT.  I wanted to make changes to sizing with each example of my work to not include absolute sizes.
