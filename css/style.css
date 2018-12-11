@@ -149,7 +149,13 @@ section{
         rgb(239, 239, 239),       
         rgb(239, 239, 239)
       );
-    padding: 5vw 0;
+    padding: 5vw 10px;
+  }
+
+  .workSelect {
+    width: 200px;
+    margin: auto;
+    display: block;
   }
 
   .overlay{
