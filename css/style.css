@@ -152,10 +152,16 @@ section{
     padding: 5vw 10px;
   }
 
-  .workSelect {
-    width: 200px;
+  .flexSimple {
+    width: 300px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  #select {
     margin: auto;
-    display: block;
   }
 
   .overlay{

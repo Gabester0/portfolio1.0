@@ -1,5 +1,17 @@
 //FCC, FE, PHP, JS, courseProject, techDoc, Pro, API
+let classes = [{ FCC : document.querySelectorAll(".FCC") },
+                {FE : document.querySelectorAll(".FE")},
+                {PHP : document.querySelectorAll(".PHP")},
+                {JS : document.querySelectorAll(".JS")},
+                {courseProject : document.querySelectorAll(".courseProject")},
+                {techDoc : document.querySelectorAll(".techDoc")},
+                {Pro : document.querySelectorAll(".Pro")},
+                {API : document.querySelectorAll(".API")}];
 
+let dropdown = document.getElementById("select");
+dropdown.addEventListener(onblur, (event)=>{
+    console.log("changes");
+})
 //Need an eventListener for the select to initiate the script
 //Will set the current selection
 
