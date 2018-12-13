@@ -209,7 +209,7 @@ section{
   }
 
   .inactive {
-    margin-right: 3000px;
+    display: none;
   }
   
   .shadow {

@@ -29,5 +29,5 @@ Goals:
     [] - Make image flip on click and show a different image.  and the text from that.
     [] - Behind images are lower z-index.  Both front and background images rotate-x 180
     degrees.  animation.  
-    [] - Add filter options to search projects by language  Makes it easy for recruiters 
-    to see quickly if you have work to back up languages on your resume.  
+        [x] - Add filter options to search projects by language  Makes it easy for recruiters 
+                to see quickly if you have work to back up languages on your resume.  
