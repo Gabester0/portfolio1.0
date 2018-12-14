@@ -1,15 +1,16 @@
 let classes = ['FCC', 'FE', 'PHP', 'JS', 'courseProject', 'techDoc', 'Pro', 'API', 'all'];
 
 let dropdown = document.getElementById("select");
+
 dropdown.addEventListener("change", ()=>{
-    let current = dropdown.value;
+    let currentSelection = dropdown.value;
     classes.forEach(cl =>{
-            let ina = document.querySelectorAll("." + cl);
-            ina.forEach(i =>{
-                if(! i.classList.contains(current)){
-                    i.classList.add("inactive");
+            let currentCl = document.querySelectorAll("." + cl);
+            currentCl.forEach(element =>{
+                if(! element.classList.contains(currentSelection)){
+                    element.classList.add("inactive");
                 } else {
-                    i.classList.remove("inactive");
+                    element.classList.remove("inactive");
                 }
            })
     });
