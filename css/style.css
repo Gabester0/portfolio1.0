@@ -15,7 +15,8 @@ body {
 /***** Reuseable Components ******/  
 
 h1 {
-  text-align:center;
+  text-align:left;
+  font-weight: 300;
 }
 
 h2 {
@@ -34,10 +35,10 @@ a {
   
 .container {
   display: grid;
-  widows: 90%;
+  width: 90%;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-template-rows: repeat(auto-fill, 1fr);
-  grid-gap: 5vw 1%;
+  grid-gap: 5vw 2.5%;
   margin:0 auto 4% auto;
   padding: 0 0 5% 0;
 }
@@ -107,7 +108,8 @@ a {
 .item1 {
   display: flex;
   flex-direction: column;
-  font-size: 5.25vw;
+  font-size: 5vw;
+  font-weight: 100;
   width: 60%;
 }
 
@@ -121,14 +123,14 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  font-size: 3vw;
+  font-size: 2.75vw;
   width: 40%;
 }
 
 .item2 p {
   margin: 0;
   display: flex;
-  text-align: center;
+  text-align: left;
 }
 
 span {
@@ -147,7 +149,19 @@ section{
         rgb(239, 239, 239),       
         rgb(239, 239, 239)
       );
-    padding: 5vw 0;
+    padding: 5vw 10px;
+  }
+
+  .flexSimple {
+    width: 300px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  #select {
+    margin: auto;
   }
 
   .overlay{
@@ -192,6 +206,10 @@ section{
   
   .itemImg:hover .overlay {
    opacity:0.8;
+  }
+
+  .inactive {
+    display: none;
   }
   
   .shadow {
