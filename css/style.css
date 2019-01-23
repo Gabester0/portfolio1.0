@@ -259,7 +259,21 @@ section{
     font-size:70%;
     grid-column: 2/3;
     grid-row: 3/4;
-    margin: auto;    
+    margin: auto;
+  }
+
+  #arrow,
+  #arrow:link {
+    color: black;
+    transition: color 0.2s;
+  }
+
+  #arrow:visited,
+  #arrow:hover,
+  #arrow:focus,
+  #arrow:active {
+    color: rgb(53, 53, 53);
+    transition: color 0.2s;
   }
   
   .igit:link,
