@@ -6,6 +6,14 @@
     .item2 {
         font-size: 4vw;
     }
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        margin:auto;
+      }
+    .item {
+        max-width: 100%;
+        margin: auto;
+    }
     .contact {
         font-size: 5vw;
     }
