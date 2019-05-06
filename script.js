@@ -1,4 +1,4 @@
-let classes = ['FCC', 'FE', 'PHP', 'JS', 'courseProject', 'techDoc', 'Pro', 'API', 'all'];
+let classes = ['FCC', 'FE', 'PHP', 'JS', 'React', 'courseProject', 'techDoc', 'Pro', 'API', 'all'];
 
 let dropdown = document.getElementById("select");
 
