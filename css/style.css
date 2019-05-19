@@ -15,8 +15,8 @@ body {
 /***** Reuseable Components ******/  
 
 h1 {
-  text-align:left;
-  font-weight: 300;
+  text-align:center;
+  font-weight: 400;
 }
 
 h2 {
@@ -145,6 +145,7 @@ label {
   transition: all .3s;
   writing-mode: vertical-rl;
   text-orientation: upright;
+  margin-right: 25px;
 }
 
 
