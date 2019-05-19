@@ -14,4 +14,20 @@ dropdown.addEventListener("change", ()=>{
                 }
            })
     });
-})
+});
+
+let skillIcons = document.querySelectorAll(".skill");
+let iconArray = Array.from(skillIcons);
+let skillLabels = document.querySelectorAll(".skillLabel");
+let labelArray = Array.from(skillLabels);
+
+iconArray.forEach((icon)=>{
+    icon.addEventListener("mouseover", ()=>{
+        let index = iconArray.indexOf(icon);
+        labelArray[index].style.opacity = 1;
+    });
+    icon.addEventListener("mouseout", ()=>{
+        let index = iconArray.indexOf(icon);
+        labelArray[index].style.opacity = 0;
+    })
+});

@@ -124,7 +124,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  font-size: 2.75vw;
+  font-size: 40px;
   width: 40%;
 }
 
@@ -134,10 +134,20 @@ a {
   text-align: left;
 }
 
-span {
+.skills {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
+
+label {
+  font-size: 18px;
+  opacity: 0;
+  transition: all .3s;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+
 
 /*-----------------------------Projects-----*/
 
