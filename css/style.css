@@ -136,15 +136,19 @@ a {
 
 .skills {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
-label {
+.skill {
+  opacity: 1;
+  transition: all .3s;
+}
+
+.skillLabel {
   font-size: 18px;
   opacity: 0;
   transition: all .3s;
   writing-mode: vertical-rl;
-  text-orientation: upright;
   margin-right: 25px;
 }
 
