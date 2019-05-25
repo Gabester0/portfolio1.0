@@ -17,16 +17,16 @@ body {
 mark {
   display: inline-block;
   position: relative;
-  margin-left: 5px;
+  margin-left: 0;
 }
 
 .hilight {
-  background-color: rgba(0, 178, 157, .34);
-  padding: 0 15px 0 7px;
+  background-color: rgba(45, 189, 81, 0.2);
+  padding: 0 2px 0 0;
   border-top-right-radius: 71%;
   border-bottom-right-radius: 87%;
-  border-top-left-radius: 9%;
-  border-bottom-left-radius: 30%;
+  border-top-left-radius: 19%;
+  border-bottom-left-radius: 13%;
   z-index: -2;
 }
 
@@ -36,21 +36,21 @@ mark {
   display: block;
   width: 102%;
   height: 98%;
-  margin-left: -8px;
+  margin-left: -3px;
   margin-right: 0;
   position: absolute;
   z-index: -1;
 }
 .hilight:after {
-  background-color: rgba(0, 178, 157, .44);
-  height: 100%;
+  background-color: rgba(45, 189, 81, 0.3);
+  height: 89%;
   top: 1px;
   left: -2px;
   transform: rotate(-2deg);
   border-top-right-radius: 13%;
   border-bottom-right-radius: 26%;
-  border-top-left-radius: 19%;
-  border-bottom-left-radius: 22%;
+  border-top-left-radius: 23%;
+  border-bottom-left-radius: 38%;
 }
 
 h1 {
@@ -164,7 +164,7 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   font-size: 40px;
-  width: 40%;
+  width: 70%;
 }
 
 .item2 p {
