@@ -90,7 +90,7 @@ a {
 
 /* ----------------------Navigation------------*/
 
-.navi hr {
+.nav hr {
   height:10px;
   margin: 0;
   padding: 0;
@@ -98,7 +98,7 @@ a {
   /* overflow:hidden;*/
 }
 
-.navi {
+.nav {
   margin-bottom: 10%;
   font-size: 1.5vw;
 }
@@ -111,7 +111,7 @@ a {
   overflow:none;
 }
 
-.navi ul {
+.nav ul {
   display: flex;
   flex-flow: row-reverse;
   width:95%;
@@ -119,7 +119,7 @@ a {
   margin: 4px 0 0 0;
 }
 
-.navi li {
+.nav li {
   margin-left:30px;
   float: right;
 }
