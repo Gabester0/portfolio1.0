@@ -14,6 +14,48 @@ body {
   
 /***** Reuseable Components ******/  
 
+mark {
+  display: inline-block;
+  position: relative;
+  margin-left: 0;
+  padding-right: 4px;
+}
+
+.hilight {
+  background-color: rgba(45, 189, 81, 0.2);
+  padding: 0 2px 0 0;
+  border-top-right-radius: 13%;
+  border-bottom-right-radius: 26%;
+  border-top-left-radius: 19%;
+  border-bottom-left-radius: 13%;
+  z-index: -2;
+}
+
+
+.hilight:before,
+.hilight:after {
+  content: '';
+  display: block;
+  width: 105%;
+  height: 98%;
+  margin-left: -3px;
+  margin-right: 0;
+  padding-right: 2px;
+  position: absolute;
+  z-index: -1;
+}
+.hilight:after {
+  background-color: rgba(45, 189, 81, 0.3);
+  height: 94%;
+  top: 1px;
+  left: -2px;
+  transform: rotate(-2deg);
+  border-top-right-radius: 44%;
+  border-bottom-right-radius: 34%;
+  border-top-left-radius: 23%;
+  border-bottom-left-radius: 38%;
+}
+
 h1 {
   text-align:center;
   font-weight: 400;
@@ -48,7 +90,7 @@ a {
 
 /* ----------------------Navigation------------*/
 
-.navi hr {
+.nav hr {
   height:10px;
   margin: 0;
   padding: 0;
@@ -56,7 +98,7 @@ a {
   /* overflow:hidden;*/
 }
 
-.navi {
+.nav {
   margin-bottom: 10%;
   font-size: 1.5vw;
 }
@@ -69,7 +111,7 @@ a {
   overflow:none;
 }
 
-.navi ul {
+.nav ul {
   display: flex;
   flex-flow: row-reverse;
   width:95%;
@@ -77,7 +119,7 @@ a {
   margin: 4px 0 0 0;
 }
 
-.navi li {
+.nav li {
   margin-left:30px;
   float: right;
 }
@@ -125,7 +167,7 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   font-size: 40px;
-  width: 40%;
+  width: 70%;
 }
 
 .item2 p {
@@ -136,15 +178,19 @@ a {
 
 .skills {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
-label {
+.skill {
+  opacity: 1;
+  transition: all .3s;
+}
+
+.skillLabel {
   font-size: 18px;
   opacity: 0;
   transition: all .3s;
   writing-mode: vertical-rl;
-  text-orientation: upright;
   margin-right: 25px;
 }
 

@@ -25,9 +25,11 @@ iconArray.forEach((icon)=>{
     icon.addEventListener("mouseover", ()=>{
         let index = iconArray.indexOf(icon);
         labelArray[index].style.opacity = 1;
+        icon.style.opacity = .6;
     });
     icon.addEventListener("mouseout", ()=>{
         let index = iconArray.indexOf(icon);
         labelArray[index].style.opacity = 0;
+        icon.style.opacity = 1;
     })
 });
