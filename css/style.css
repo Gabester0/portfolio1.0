@@ -9,7 +9,6 @@ body {
     color:#212121;
     margin: 0;
     padding: 0;
-    background-color: #efefef;
   }
   
 /***** Reuseable Components ******/  
@@ -90,33 +89,17 @@ a {
 
 /* ----------------------Navigation------------*/
 
-.nav hr {
-  height:10px;
-  margin: 0;
-  padding: 0;
-  width:100%;
-  /* overflow:hidden;*/
-}
-
 .nav {
-  margin-bottom: 10%;
   font-size: 1.5vw;
-}
-
-.row {
-  margin: -0.05rem 0rem;
-  padding: 0.25rem 0rem;
-  background-color: #212121;
-  height: 43px;
-  overflow:none;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  height: 50px;
+  z-index: 5;
 }
 
 .nav ul {
-  display: flex;
-  flex-flow: row-reverse;
-  width:95%;
-  padding:0;
-  margin: 4px 0 0 0;
+  text-decoration: none;
 }
 
 .nav li {
@@ -126,8 +109,8 @@ a {
 
 .btn:link,
 .btn:visited  {
-  color: white;
   text-decoration:none;
+  list-style: none;
   transition: color .5s;
 }
 
@@ -140,12 +123,21 @@ a {
 
 
 /*****  About me (Landing Page)  ******/  
+main {
+  width: 100vw;
+  height: 100vh;
+}
+main div {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background-image: url(../img/drew-beamer-2-1592889-unsplash.jpg);
+  background-size: cover;
+}
 
 .wrapper {
-  display: flex;
-  flex-direction: row;
-  width: 75vw;
-  margin: auto auto 10vh auto;
+  margin: auto auto auto;
 }
 
 .item1 {
