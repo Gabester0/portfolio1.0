@@ -8,7 +8,12 @@ body {
     font-family:Lato, sans-serif;
     /*Change*/
     color:#212121;
-    /*Change*/
+
+    /*
+    Change
+    color: hsl(185, 49%, 79%);
+    */
+    background-color: #212121;
     margin: 0;
     padding: 0;
   }
@@ -99,17 +104,21 @@ a {
   height: 50px;
   width: 100%;
   z-index: 5;
-  background-color: #efefef;
+  background-color: #212121;
 }
 
 .nav ul {
   list-style: none;
-  margin: 15px 0 0 0;
+  margin: 0;
   padding-top: 10px;
 }
 
 .nav li {
   display: inline;
+}
+
+.nav li a {
+  color: hsl(150, 48%, 79%);
 }
 
 .nav li:nth-child(2) {
@@ -131,11 +140,11 @@ a {
 }
 
 
-/*****  About me (Landing Page)  ******/  
+/*****  About me (Landing Page)  ******/
 main {
-  height: 95vh;
+  height: 90vh;
   width: 95%;
-  margin: 25px auto;
+  margin: 25px auto 0 auto;
   padding: 0;
   background-image: url(../img/drew-beamer-2-1592889-unsplash.jpg);
   background-size: cover;
@@ -143,19 +152,24 @@ main {
 
 main div {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
-  transform: translate(-40%, -70%);
+  transform: translate(-50%, -50%);
+  padding: 0 20px;
+  box-shadow: 2px 2px 5px  #241d1da8, -2px -2px 5px  #241d1da8;
+  background-color: #241d1da8;
 }
 
 .item1 {
-  color: #bbbbbb;
-  font-size: 300%;
+  color: hsl(150, 48%, 79%);
+  font-size: 250%;
+  text-align: center;
 }
 
 .item1 h1 {
-  margin: 0;
-
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 1px;
 }
 
 .item2 {
