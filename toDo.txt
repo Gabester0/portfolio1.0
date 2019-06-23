@@ -1,0 +1,37 @@
+//////// Colors
+
+Navy: #0c084c   (text on light background)
+Med Blue: #096386   (footer?)
+Green/Blue: #00b7a8 (accent)
+Tan: #f0eec8    (text on dark background)
+
+//////// Current To-Do List:
+
+Extend tan background color throught the page
+
+Create a Skills section?
+    -Research how others do this
+    -Possibly create this with Tools (Languages and skills I use), 
+        Wishlist (tools I want to use more), 
+        Key priorities (what parts of web development do I value the most?).
+
+Create an about me page?
+
+Redesign the footer with the new color scheme and without the gradient.
+
+Modify the projects section
+
+    -Find way to make the dropdown more interesting.
+
+    -Incorporate the color scheme
+
+    -Incorporate spinning cards from Jonas Course?
+        -Have one key sentence discribing the project, a list of technologies used, and links to code
+         and see the page hosted live.
+
+Prune excess CSS
+
+    Mobile Layout: 
+        -landing page picture vertical
+
+        -Hamburger Nav to cover screen on click.  
