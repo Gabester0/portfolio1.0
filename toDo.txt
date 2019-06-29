@@ -1,12 +1,12 @@
 //////// Colors
-Navy: #0c084c           (text on light background)
-Med Blue: #096386       (footer?)
-Green/Blue: #00b7a8     (accent)
-Tan: #f0eec8            (text on dark background)
+#0c084c     (text on light background)
+#096386     (footer?)
+#00b7a8     (accent)
+#f0eec8     (text on dark background)
 
 //////// Current To-Do List:
 
-Extend tan background color throught the page
+- [X] -||Switched to #00b7a8 instead||Extend tan background color throught the page
 
 Create a Skills section?
     -Research how others do this
