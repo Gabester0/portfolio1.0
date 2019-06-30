@@ -14,54 +14,15 @@ body {
     Change
     color: hsl(185, 49%, 79%);
     */
-    background-color: #f0eec8;
+    /* background-color: #f0eec8; */
+    /* background-color: #096386; */
+    /* background-color: #0c084c; */
+    background-color: #00b7a8;
     margin: 0;
     padding: 0;
   }
-  
-/***** Reuseable Components ******/  
 
-mark {
-  display: inline-block;
-  position: relative;
-  margin-left: 0;
-  padding-right: 4px;
-}
-
-.hilight {
-  background-color: rgba(45, 189, 81, 0.2);
-  padding: 0 2px 0 0;
-  border-top-right-radius: 13%;
-  border-bottom-right-radius: 26%;
-  border-top-left-radius: 19%;
-  border-bottom-left-radius: 13%;
-  z-index: -2;
-}
-
-
-.hilight:before,
-.hilight:after {
-  content: '';
-  display: block;
-  width: 105%;
-  height: 98%;
-  margin-left: -3px;
-  margin-right: 0;
-  padding-right: 2px;
-  position: absolute;
-  z-index: -1;
-}
-.hilight:after {
-  background-color: rgba(45, 189, 81, 0.3);
-  height: 94%;
-  top: 1px;
-  left: -2px;
-  transform: rotate(-2deg);
-  border-top-right-radius: 44%;
-  border-bottom-right-radius: 34%;
-  border-top-left-radius: 23%;
-  border-bottom-left-radius: 38%;
-}
+/***** Reuseable Components ******/
 
 h1 {
   text-align:center;
@@ -82,7 +43,7 @@ h4 {
 a {
   text-decoration: none;
 }
-  
+
 .container {
   display: grid;
   width: 90%;
@@ -101,8 +62,9 @@ a {
 .nav {
   font-size: 1.5vw;
   z-index: 5;
-  background-color: #00b7a8;
-  /* background-color: #0c084c; */
+  color: #00b7a8;
+  /* background-color: #00b7a8; */
+  background-color: #0c084c;
   grid-column: 5/6;
   position: fixed;
   top: 0;
@@ -123,12 +85,12 @@ a {
 
 .nav li {
   padding-top: 2rem;
-  
+
 }
 
 .nav li a {
   /* color: hsl(150, 48%, 79%); */
-  color: #0c084c;
+  color: #00b7a8;
   font-weight: bold;
   display: block;
 
@@ -186,6 +148,27 @@ main div {
   letter-spacing: 1px;
 }
 
+.item1 p {
+  text-align: left;
+}
+
+/*-----WORK-----*/
+
+
+section {
+  background-color: #00b7a8;
+  color: #0c084c;
+  padding: 5vw 10px;
+}
+
+.flexSimple {
+  width: 800px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+/* 
 .item2 {
   display: flex;
   flex-direction: column;
@@ -198,14 +181,17 @@ main div {
   margin: 0;
   display: flex;
   text-align: left;
-}
+} */
 
 .skills {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
+  font-size: 40px;
 }
-
-.skill {
+/*link, visited, hover, focus, active*/
+.skill,
+.skill:link {
+  color: #0c084c;
   opacity: 1;
   transition: all .3s;
 }
@@ -216,101 +202,84 @@ main div {
   transition: all .3s;
   writing-mode: vertical-rl;
   margin-right: 25px;
+  padding: 5px 20px 20px 0px;
+}
+
+.overlay{
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
 }
 
 
 
-/*-----------------------------Projects-----*/
+.hoverText {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
 
-section{
-    background: 
-      linear-gradient(
-        rgb(239, 239, 239), 
-        rgb(239, 239, 239), 
-        rgba(82, 82, 82, 0.45),
-        rgb(239, 239, 239),       
-        rgb(239, 239, 239)
-      );
-    padding: 5vw 10px;
-  }
+.item {
+  margin: auto;
+  position:relative;
+  padding: 2%;
+}
 
-  .flexSimple {
-    width: 300px;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-  }
+.item img {
+  height: auto;
+  width: 100%;
+}
 
-  #select {
-    margin: auto;
-  }
+.itemImg {
+  background-color: black;
+  height: auto;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
 
-  .overlay{
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-  }
-  
-  .hoverText {
-   color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  .item {
-   margin: auto;
-   position:relative;
-   padding: 2%;
-  }
-  
-  .item img {
-   height: auto;
-   width: 100%;
-  }
-  
-  .itemImg {
-   background-color: black;
-   height: auto;
-   width: 100%;
-   position: relative;
-   bottom: 0;
-  }
-  
-  .itemImg:hover .overlay {
-   opacity:0.8;
-  }
+.itemImg:hover .overlay {
+  opacity:0.8;
+}
 
-  .inactive {
-    display: none;
-  }
-  
-  .shadow {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   }
- 
+.inactive {
+  display: none;
+}
 
-  /*************  Contact  ************/
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
-  .foot {
-   background-color: #efefef;
+#select {
+  width: 100%;
+  padding: 4px 6px;
+  font-size: 16px;
+  margin: auto;
+}
+
+
+/*************  Contact  ************/
+
+.foot {
+   background-color: #0c084c;
+   color: #f0eec8;
    padding:0;
    width: 370px;
    margin:auto;
   }
-  
+
   .contact hr {
     margin:0 100px ;
   }
-  
+
   .contact {
     width: 50%;
     margin:0 auto;
@@ -324,17 +293,19 @@ section{
   .contactH2 {
     grid-column: 2/3;
   }
-  
+
   .itema {
     grid-row: 2/3;
     margin: auto;
   }
-  
+
   .contact i {
     font-size:4vw;
-    color:#212121;
+    color: #f0eec8;
+    padding: 10px;
+    border-bottom: 1px solid #f0eec8;
   }
-  
+
   #lBut {
     color: black;
     font-size:70%;
@@ -356,36 +327,36 @@ section{
     color: rgb(53, 53, 53);
     transition: color 0.2s;
   }
-  
+
   .igit:link,
   .igit:visited {
     transition: .5s;
   }
-  
+
   .igit:hover {
     color: #999;
   }
-  
+
   .ifree:link,
   .ifree:visited {
     transition: .5s;
   }
-  
+
   .ifree:hover {
     color: darkgreen;
   }
-  
+
   .ilink:link,
   .ilink:visited {
     transition: 0.5s;
   }
-  
+
   .ilink:hover {
     color: #0077b5;
   }
-  
+
     /****************    Footer  ***************/
-  
+
   .bar {
     background: #00b09b;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
