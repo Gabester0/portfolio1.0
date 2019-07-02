@@ -20,7 +20,6 @@ Modify the projects section
 - [X] -     -Find way to make the dropdown more interesting.
         --Note: Moved skills to start of work and used the icons as links to select projects
 
-    -Add SASS project
 
     -Add a reset selections link?
 
@@ -38,3 +37,5 @@ Prune excess CSS
         -landing page picture vertical
 
         -Hamburger Nav to cover screen on click.
+
+    -Add SASS project
