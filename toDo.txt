@@ -20,9 +20,6 @@ Modify the projects section
 - [X] -     -Find way to make the dropdown more interesting.
         --Note: Moved skills to start of work and used the icons as links to select projects
 
-
-    -Add a reset selections link?
-
     -Incorporate the color scheme
 
     -Incorporate spinning cards from Jonas Course?
@@ -30,6 +27,29 @@ Modify the projects section
             and see the page hosted live.
 
 - [X] - Redesign the footer with the new color scheme and without the gradient.
+
+- [X] - Contact links fade to white instead of brand colors.
+
+-Make I Am section bulleted list.  
+    - [] - Add points 
+            +Able to collaborate or work independantly
+            +Punctual, not really
+            +Analytical Skills, Social skills, Teamwork, Accessible, Adaptive, Appreciative, Conscientious, considerate, cooperative, 
+            curious, dedicated, direct, disciplined, dutiful, earnest, enthusiastic, friendly, genuine, good-natured, hard-working, helpful,
+            honest, humble, innovative, insightful, intuitive, logical, meticulous, objective, open, optimistic, painstaking, passionate, 
+            peaceful, perceptive, practical, reflective, reliable, responsible, scrupulous, self-sufficient, stable, systematic.
+
+adaptive, intuitive, and helpful
+passionate about accessible products and technology
+
+
+
+
+            Companionly, generous, felicific, self-denying, firm, flexible, focused, experimental, playful and discrete.  
+
+            inert, mechanical, repressed, rigid, sedentary, uncooperative.
+
+            power-hungry, predatory, sloppy, unctuous, un-principled, venemous.  
 
 Prune excess CSS
 
@@ -39,3 +59,10 @@ Prune excess CSS
         -Hamburger Nav to cover screen on click.
 
     -Add SASS project
+
+
+
+    dns1.p01.nsone.net
+    dns2.p01.nsone.net
+    dns3.p01.nsone.net
+    dns4.p01.nsone.net

@@ -7,26 +7,13 @@ html {
 body {
     font-family:Montserrat, sans-serif;
     display:grid;
-    /*Change*/
     color:#212121;
-
-    /*
-    Change
-    color: hsl(185, 49%, 79%);
-    */
-    /* background-color: #f0eec8; */
-    /* background-color: #096386; */
-    /* background-color: #0c084c; */
     background-color: #00b7a8;
     margin: 0;
     padding: 0;
   }
 
 /***** Reuseable Components ******/
-
-h1 {
-  text-align:center;
-}
 
 h2 {
   text-align: center;
@@ -53,15 +40,11 @@ a {
   padding: 0 0 5% 0;
 }
 
-
-
-
 /* ----------------------Navigation------------*/
 
 .nav {
   font-size: 1.5vw;
   z-index: 5;
-  color: #00b7a8;
   background-color: #0c084c;
   grid-column: 5/6;
   position: fixed;
@@ -75,7 +58,7 @@ a {
 
 .nav ul {
   position: sticky;
-  position: -webkit-sticky;
+  -webkit-position: sticky;
   top: 0;
   right: 0;
   width: 100px;
@@ -93,8 +76,7 @@ a {
 }
 
 .nav li a {
-  /* color: #00b7a8; */
-  color: #f0eec8;
+  color:#f0eec8;
   display: block;
 
 }
@@ -116,14 +98,14 @@ a {
 
 /*****  Landing Page  ******/
 main {
-  width: 95vw;
-  height: 92.5vh;
+  width: 100vw;
+  height: 100vh;
   position: relative;
-  margin: 25px auto 0 auto;
+  margin: 0 auto 0 auto;
   display: grid;
   grid-template-columns: min-content, 1fr;
   padding: 0;
-  background-image: url(../img/drew-beamer-2-1592889-unsplash.jpg);
+  background-image: linear-gradient(#00000094 0%, #00000094 100%), url(../img/drew-beamer-2-1592889-unsplash.jpg);
   background-size: cover;
 }
 
@@ -133,33 +115,35 @@ main div {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 0 20px;
-  /* box-shadow: 2px 2px 5px  #241d1da8, -2px -2px 5px  #241d1da8;
-  background-color: #241d1da8; */
+  padding: 0px 20px;
+  margin-bottom: 0px;
 }
 
 .item1 {
-  /* color: hsl(150, 48%, 79%); */
-  color: #f0eec8;
-  font-size: 250%;
+  color:#00B7A8;
+  text-shadow: black;
+  /* color:rgb(2, 211, 193); */
+  font-size: 260%;
   text-align: center;
 }
 
 .item1 h1 {
   text-transform: uppercase;
   font-weight: 100;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  word-spacing: 20px;
 }
 
-.item1 p {
+#about-me {
+  list-style: none;
   text-align: left;
-  font-size: 60%;
+  font-size: 70%;
   line-height: 175%;
   font-weight: 600;
+  padding-left: 0;
 }
 
 /*-----WORK-----*/
-
 
 section {
   background-color: #00b7a8;
@@ -185,6 +169,7 @@ section {
   margin-left: 47.5px;
   padding-left: 20px;
 }
+
 /*link, visited, hover, focus, active*/
 .skill,
 .skill:link {
@@ -211,8 +196,6 @@ section {
   position: absolute;
   bottom: 0;
 }
-
-
 
 .hoverText {
   color: white;
@@ -283,40 +266,13 @@ section {
   font-size: 50px;
 }
 
-.igit:link,
-.igit:visited {
-  transition: .5s;
-}
-
-.igit:hover {
-  color: #999;
-}
-
-.icode:link,
-.icode:visited {
-  transition: .5s;
-}
-
-.icode:hover {
-  color: white;
-}
-
-.ifree:link,
-.ifree:visited {
-  transition: .5s;
-}
-
-.ifree:hover {
-  color: darkgreen;
-}
-
-.ilink:link,
-.ilink:visited {
+.contact-icon:link,
+.contact-icon:visited {
   transition: 0.5s;
 }
 
-.ilink:hover {
-  color: #0077b5;
+.contact-icon:hover {
+  color: white;
 }
 
 footer {
