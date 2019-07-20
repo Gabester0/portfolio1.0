@@ -173,6 +173,7 @@ section {
 /*link, visited, hover, focus, active*/
 .skill,
 .skill:link {
+  font-size: 140%;
   color: #0a063d;
   opacity: 1;
   transition: all .3s;
@@ -184,7 +185,7 @@ section {
   transition: all .3s;
   writing-mode: vertical-rl;
   margin-right: 25px;
-  padding: 5px 20px 20px 0px;
+  padding: 15px 20px 20px 10px;
 }
 
 .overlay{
