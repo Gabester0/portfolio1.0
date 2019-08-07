@@ -99,13 +99,13 @@ a {
 /*****  Landing Page  ******/
 main {
   width: 100vw;
-  height: 100vh;
+  height: 115vh;
   position: relative;
   margin: 0 auto 0 auto;
   display: grid;
   grid-template-columns: min-content, 1fr;
   padding: 0;
-  background-image: linear-gradient(#00000094 0%, #00000094 100%), url(../img/drew-beamer-2-1592889-unsplash.jpg);
+  background-image: linear-gradient(#00000094 75%, #000000 95%), url(../img/drew-beamer-2-1592889-unsplash.jpg);
   background-size: cover;
 }
 
@@ -120,9 +120,10 @@ main div {
 }
 
 .item1 {
+  /* color:rgba(240, 238, 200, .9); */
+  /* color:rgb(2, 211, 193); */
   color:#00B7A8;
   text-shadow: black;
-  /* color:rgb(2, 211, 193); */
   font-size: 260%;
   text-align: center;
 }
@@ -131,16 +132,45 @@ main div {
   text-transform: uppercase;
   font-weight: 100;
   letter-spacing: 2px;
-  word-spacing: 20px;
+  margin-top: 0;
 }
 
+.item1 h4 {
+  margin-bottom: 0;
+}
+
+h6,
 #about-me {
   list-style: none;
-  text-align: left;
-  font-size: 70%;
+  font-size: 65%;
   line-height: 175%;
   font-weight: 600;
-  padding-left: 0;
+  padding: 0;
+  margin: 20px auto;
+}
+.item1 > p {
+  margin-top: 0px;
+  text-align: center;
+  line-height: 175%;
+  font-size: 20px;
+}
+
+article {
+  color: rgb(2, 211, 193);
+  background-color: black;
+  width: 100vw;
+  padding: 35px auto;
+}
+article h2 {
+  padding-top: 150px;
+}
+
+article > p {
+  width: 50%;
+  margin: 25px auto;
+  line-height: 200%;
+  font-size: 24px;
+  margin-bottom: 100px;
 }
 
 /*-----WORK-----*/
