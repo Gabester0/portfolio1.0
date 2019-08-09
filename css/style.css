@@ -245,6 +245,11 @@ section {
 }
 
 .item img {
+  height: 237px;
+  width: 414px;
+}
+/* BACKUP
+.item img {
   height: auto;
   width: 100%;
 }
@@ -253,6 +258,14 @@ section {
   background-color: black;
   height: auto;
   width: 100%;
+  position: relative;
+  bottom: 0;
+}
+*/
+.itemImg {
+  background-color: black;
+  height: 237px;
+  width: 414px;
   position: relative;
   bottom: 0;
 }
