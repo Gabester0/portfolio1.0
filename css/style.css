@@ -157,7 +157,8 @@ h6,
 
 article {
   color: rgb(2, 211, 193);
-  background-color: black;
+  /* background-color: black; */
+  background-image: linear-gradient(black 0%, 5%, #191919 30%);
   width: 100vw;
   padding: 35px auto;
 }
@@ -177,8 +178,11 @@ article > p {
 /*-----WORK-----*/
 
 section {
-  background-color: #00b7a8;
-  color: #0a063d;
+  color: #00b7a8;
+  /* background-color: #00b7a8; */
+  /* background-color: black; */
+  background-color: #191919;
+  /* color: #0a063d; */
   padding: 5vw 10px;
 }
 
@@ -205,13 +209,15 @@ section {
 .skill,
 .skill:link {
   font-size: 140%;
-  color: #0a063d;
+  /* color: #0a063d; */
+  color: #00b7a8;
   opacity: 1;
   transition: all .3s;
 }
 
 .skillLabel {
   font-size: 18px;
+  color: #00b7a8;
   opacity: 0;
   transition: all .3s;
   writing-mode: vertical-rl;
