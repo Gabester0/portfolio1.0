@@ -10,11 +10,13 @@ iconArray.forEach((icon)=>{
         let index = iconArray.indexOf(icon);
         labelArray[index].style.opacity = 1;
         icon.style.opacity = .7;
+        icon.style.transform = "translateY(1px)";
     });
     icon.addEventListener(`mouseout`, ()=>{
         let index = iconArray.indexOf(icon);
         labelArray[index].style.opacity = 0;
         icon.style.opacity = 1;
+        icon.style.transform = "translateY(0px)";
     })
 });
 
