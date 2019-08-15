@@ -1,0 +1,61 @@
+//////// Colors
+#0c084c     (text on light background)
+#096386     (footer?)
+#00b7a8     (accent)
+#f0eec8     (text on dark background)
+
+//////// Current To-Do List:
+
+- [X] -||Switched to #00b7a8 instead||Extend tan background color throught the page
+
+- [X] - Create a Skills section?
+   - [?] - Research how others do this
+
+- [X] - Create an about me page?
+
+ - [X] - Make nav background a clip-path shape.
+
+Modify the projects section
+
+- [X] -     -Find way to make the dropdown more interesting.
+        --Note: Moved skills to start of work and used the icons as links to select projects
+
+    -Incorporate the color scheme
+
+    -Incorporate spinning cards from Jonas Course?
+        -Have one key sentence discribing the project, a list of technologies used, and links to code
+            and see the page hosted live.
+
+    -Make all project images uniform size
+
+- [X] - Redesign the footer with the new color scheme and without the gradient.
+
+- [X] - Contact links fade to white instead of brand colors.
+
+- [X] - Make tech icons bigger
+
+    - [X] - Make I Am section bulleted list.  
+    - [X] - Add points 
+            +Able to collaborate or work independantly
+            +Punctual, not really
+            +Analytical Skills, Social skills, Teamwork, Accessible, Adaptive, Appreciative, Conscientious, considerate, cooperative, 
+            curious, dedicated, direct, disciplined, dutiful, earnest, enthusiastic, friendly, genuine, good-natured, hard-working, helpful,
+            honest, humble, innovative, insightful, intuitive, logical, meticulous, objective, open, optimistic, painstaking, passionate, 
+            peaceful, perceptive, practical, reflective, reliable, responsible, scrupulous, self-sufficient, stable, systematic.
+
+            adaptive, intuitive, and helpful
+            passionate about accessible products and technology
+
+            -Companionly, generous, felicific, self-denying, firm, flexible, focused, experimental, playful and discrete.  
+            -inert, mechanical, repressed, rigid, sedentary, uncooperative.
+            -power-hungry, predatory, sloppy, unctuous, un-principled, venemous.  
+
+
+Prune excess CSS
+
+    Mobile Layout:
+        -landing page picture vertical
+
+        -Hamburger Nav to cover screen on click.
+
+        -[X]-Add SASS project
