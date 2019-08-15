@@ -103,7 +103,7 @@ main {
   width: 100vw;
   height: 115vh;
   position: relative;
-  margin: 0 auto 0 auto;
+  margin: 0;
   display: grid;
   grid-template-columns: min-content, 1fr;
   padding: 0;

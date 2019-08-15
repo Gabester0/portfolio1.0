@@ -11,7 +11,7 @@
 - [X] - Create a Skills section?
    - [?] - Research how others do this
 
-- [?] - Create an about me page?
+- [X] - Create an about me page?
 
  - [X] - Make nav background a clip-path shape.
 
