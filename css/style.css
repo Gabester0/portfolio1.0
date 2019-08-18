@@ -17,7 +17,6 @@ body {
 h2 {
   text-align: center;
   font-size: 3.5vw;
-  display: grid;
 }
 
 h3,
@@ -33,7 +32,8 @@ a {
 .container {
   display: grid;
   width: 90%;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+  grid-template-columns: repeat(auto-fill, minmax(415px, 1fr));
   grid-template-rows: repeat(auto-fill, 1fr);
   grid-gap: 5vw 2.5%;
   margin:0 auto 4% auto;
@@ -331,3 +331,16 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* @media (max-width: 950px){
+  .container {
+    width: 90%;
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .item {
+    width: 414px;
+    margin: 0;
+  }
+} */
