@@ -1,3 +1,14 @@
+@media (max-width: 750px){
+    .container {
+      width: 100vw;
+      margin: 0;
+    }
+  
+    .item {
+      padding: 0;
+    }
+  }
+
 @media (max-width: 440px){
     .item1 {
         display: flex;
