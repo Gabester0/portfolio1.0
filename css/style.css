@@ -135,6 +135,7 @@ main div {
   /* color:rgb(173, 223, 218); */
   /* color:rgba(143, 165, 163, 0.808); */
   /* color:#f0eec8; */
+  width: 800px;
   color:rgba(255, 255, 255, 0.869);
   text-align: left;
 }
@@ -168,6 +169,14 @@ main div {
   text-align: right;
 }
 
+.downButton {
+  clip-path: polygon(100% 2%, 100% 0, 0 0%, 0% 2%, 48% 93%, 49% 94%, 50% 95%, 51% 94%, 52% 93%);
+  width: 100px;
+  height: 80px;
+  margin-top: 7px;
+  border-radius: 2.5%;
+  background-image: linear-gradient(#9400D3, #4B0082, #0000FF, #00FF00, #FFFF00, #FF7F00, #FEFFEE);
+}
 
 h6,
 #about-me {
