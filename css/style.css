@@ -110,20 +110,20 @@ a {
 /*****  Landing Page  ******/
 main {
   width: 100vw;
-  height: 115vh;
+  height: 100vh;
   position: relative;
   margin: 0;
   display: grid;
   grid-template-columns: 1fr;
   padding: 0;
-  background-image: linear-gradient(#00000094 75%, #000000 95%), url(../img/drew-beamer-2-1592889-unsplash.jpg);
+  background-image: linear-gradient(#00000029 70%, #000000 98%), url(../img/drew-beamer-2-1592889-unsplash.jpg);
   background-size: cover;
 }
 
 main div {
   grid-column: 1/5;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   /* padding: 0px 20px; */
