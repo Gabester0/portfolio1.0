@@ -220,11 +220,15 @@ section {
 }
 
 .flexSimple {
-  width: 50vw;
+  width: 75vw;
   margin: 10px auto;
   display: flex;
   flex-direction: column;
   align-content: center;
+}
+
+.flexSimple:nth-last-child(1) {
+  width: 50vw;
 }
 
 .flexSimpleRow {
