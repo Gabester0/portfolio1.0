@@ -228,7 +228,7 @@ section {
 }
 
 .flexSimple:nth-last-child(1) {
-  width: 50vw;
+  width: 400px;
 }
 
 .flexSimpleRow {
@@ -347,7 +347,7 @@ section {
   border-bottom: 1px solid #00b7a8;
   margin: 10px auto 50px auto;
   padding: 10px;
-  font-size: 3.25rem;
+  font-size: 4.5rem;
   transition: all .3s;
 }
 
