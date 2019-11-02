@@ -2,6 +2,7 @@ html {
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
@@ -58,7 +59,6 @@ a {
   grid-column: 5/6;
   position: fixed;
   top: 0;
-  /* right: 0; */
   left: calc(100vw - 250px);
   padding: 0;
   clip-path: polygon(37% 0, 100% 0, 100% 100%, 37% 62%);
@@ -106,10 +106,16 @@ a {
   transition: color .5s;
 }
 
+.btn-img {
+  margin-left: 24px;
+}
+
 .btn-img img {
   height: 23px;
   width: 24px;
+  z-index: 1;
 }
+
 #box {
   height: 23px;
   width: 24px;
@@ -118,9 +124,6 @@ a {
   transition: border 0.5s;
 }
 
-.btn-img img {
-  z-index: 1;
-}
 
 #box:hover {
   border: 1px solid rgba(255, 255, 255, 0.877);
@@ -172,17 +175,12 @@ main {
   width: 650px;
   margin: 50px auto 0 auto;
   text-align: left;
-  font-size: 22px;
+  font-size: 1.375rem;
 }
-
-/* .item1 > p {
-  width: 100%;
-  height: 75px;
-} */
 
 #profile {
   width: 200px;
-  height: auto;
+  height: 203px;
   border-radius: 50%;
   border: 7px solid rgba(255, 255, 255, 0.869);
   box-sizing: border-box;
@@ -226,6 +224,7 @@ main {
 
 .downButton {
   clip-path: polygon(100% 2%, 100% 0, 0 0%, 0% 2%, 48% 93%, 49% 94%, 50% 95%, 51% 94%, 52% 93%);
+  -webkit-clip-path: polygon(100% 2%, 100% 0, 0 0%, 0% 2%, 48% 93%, 49% 94%, 50% 95%, 51% 94%, 52% 93%);
   width: 100px;
   height: 80px;
   margin-top: 7px;
@@ -305,13 +304,10 @@ section {
 
 .skill:nth-child(1){
   margin-left: 47.5px;
-  /* padding-left: 20px; */
 }
 
-/*link, visited, hover, focus, active*/
 .skill,
 .skill:link {
-  /* font-size: 140%; */
   color: #00b7a8;
   opacity: 1;
   transition: all .3s;
@@ -412,5 +408,5 @@ footer {
 }
 
 footer p {
-  font-size: 16px;
+  font-size: 1rem;
 }
