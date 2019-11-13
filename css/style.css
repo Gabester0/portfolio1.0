@@ -62,6 +62,7 @@ a {
   left: calc(100vw - 250px);
   padding: 0;
   clip-path: polygon(37% 0, 100% 0, 100% 100%, 37% 62%);
+  -webkit-clip-path: polygon(37% 0, 100% 0, 100% 100%, 37% 62%);
   padding-left: 100px;
   padding-bottom: 75px;
 }
