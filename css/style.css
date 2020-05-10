@@ -222,6 +222,9 @@ main {
   text-align: right;
 }
 
+#hide {
+  display: none;
+}
 
 .downButton {
   clip-path: polygon(100% 2%, 100% 0, 0 0%, 0% 2%, 48% 93%, 49% 94%, 50% 95%, 51% 94%, 52% 93%);
