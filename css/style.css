@@ -25,7 +25,6 @@ body {
 
 ::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.869);
-  /* border-radius: 12px; */
 }
 
 /***** Reuseable Components ******/
@@ -60,8 +59,6 @@ a {
   display: grid;
   width: 90%;
   grid-template-columns: repeat(auto-fill, 1fr);
-  /* grid-template-columns: repeat(auto-fill, minmax(415px, 1fr)); */
-  /* grid-template-columns: 1fr; */
   grid-template-rows: repeat(auto-fill, 1fr);
   grid-gap: 5vw 2.5%;
   margin:0 auto 4% auto;
@@ -165,7 +162,6 @@ main {
 .item1 {
   width: 600px;
   height: 300px;
-  /* color:rgba(255, 255, 255, 0.869); */
   color: rgb(2, 211, 193);
   text-align: left;
   grid-column: 1/5;
@@ -183,14 +179,8 @@ main {
   justify-content: space-between;
   width: 100%;
 }
-/* .item1b {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 600px;
-} */
+
 .item1b > p{
-  /* margin: 50px auto 0 0; */
   text-align: left;
   font-size: 1.3rem;
   line-height: 1.5;
@@ -200,8 +190,6 @@ main {
   width: 200px;
   height: 203px;
   border-radius: 10px;
-  /* border-radius: 50%; */
-  /* border: 7px solid rgba(255, 255, 255, 0.869); */
   box-sizing: border-box;
   display: inline-block;
 }
@@ -314,36 +302,10 @@ section {
   justify-content: space-evenly;
   font-size: 3.25rem;
 }
-/* 
-.skillBox {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  height: 150px;
-  margin: 15px auto;
-}
 
-.skill:nth-child(1){
-  margin-left: 47.5px;
+.item .flexSimpleRow {
+  margin-top: 50px;
 }
-
-.skill,
-.skill:link {
-  color: #00b7a8;
-  opacity: 1;
-  transition: all .3s;
-  cursor: pointer;
-}
-
-.skillLabel {
-  font-size: 1.15rem;
-  color: #00b7a8;
-  font-weight: bold;
-  opacity: 0;
-  transition: all .3s;
-  writing-mode: vertical-rl;
-  padding: 15px 20px 20px 10px;
-} */
 
 .overlay{
   height: 100%;
@@ -355,6 +317,8 @@ section {
   bottom: 0;
   box-sizing: border-box;
   border: 4px solid #00b7a8;
+  font-size: 1.3rem;
+  line-height: 1.8;
 }
 
 .hoverText {
@@ -391,8 +355,6 @@ section {
 }
 
 .item img {
-  /* height: 237px;
-  width: 414px; */
   width: 60vw;
   height:calc(60vw * .55);
 
@@ -400,8 +362,6 @@ section {
 
 .itemImg {
   background-color: #0c084c;
-  /* height: 237px;
-  width: 414px; */
   width: 60vw;
   height:calc(60vw * .55);
   position: relative;

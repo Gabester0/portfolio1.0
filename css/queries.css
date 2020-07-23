@@ -29,10 +29,17 @@
     }
     .item .flexSimpleRow {
         flex-direction: column;
-      }
-      .projects-icon {
+    }
+    .projects-icon {
         margin: 0px auto 20px auto;
-      }
+    }
+    .overlay{
+        font-size: initial;
+        line-height: initial;
+    }
+    .hoverText{
+        width: 75%;
+    }
       
     .item1b > p {
         width: 398px;
@@ -49,7 +56,8 @@
         grid-template-columns: 1fr;
     }
     .nav {
-        padding-bottom: 45px;
+        padding-bottom: 25px;
+        left: calc(100vw - 220px);
     }
     .item {
         max-width: 100%;
@@ -87,7 +95,10 @@
     .flexSimple:nth-last-child(1) {
         width: 250px;
     }
-  
+    .hoverText{
+        width: 90%;
+        font-size: 14px;
+    }
 }
 
 
@@ -107,5 +118,10 @@
     .item img {
         width: 250px;
     }
-    
+}
+
+@media (max-height: 625px){
+    .item1 {
+        top: 55%;
+    }
 }
