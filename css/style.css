@@ -189,7 +189,7 @@ main {
 #profile {
   width: 200px;
   height: 203px;
-  border-radius: 10px;
+  border-radius: 50%;
   box-sizing: border-box;
   display: inline-block;
 }
