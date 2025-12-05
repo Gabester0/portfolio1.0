@@ -1,3 +1,4 @@
+/* ----------------------Global Styles---------------------- */
 html {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -12,22 +13,17 @@ body {
   margin: 0;
 }
 
-::-webkit-scrollbar {
-  width: 14px;
+main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0;
+  background-color: var(--color-background);
 }
 
-::-webkit-scrollbar-thumb {
-  background: var(--color-primary);
-  border-radius: 14px;
-  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.869);
-}
-
-/***** Reuseable Components ******/
 h2,
 h4,
 h6 {
@@ -55,18 +51,23 @@ a {
   text-decoration: none;
 }
 
-.container {
-  display: grid;
-  width: 90%;
-  grid-template-columns: repeat(auto-fill, 1fr);
-  grid-template-rows: repeat(auto-fill, 1fr);
-  grid-gap: 5vw 2.5%;
-  margin: 0 auto 4% auto;
-  padding: 0 0 5% 0;
+/* ----------------------Scrollbar---------------------- */
+::-webkit-scrollbar {
+  width: 14px;
 }
 
-/* ----------------------Navigation------------*/
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 14px;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+}
 
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.869);
+}
+
+/* ----------------------Navigation----------------------*/
 .nav {
   z-index: 5;
   background-color: #0c084c;
@@ -120,41 +121,9 @@ a {
   transition: color 0.5s;
 }
 
-.btn-img {
-  margin-left: 24px;
-}
+/* ----------------------Landing Page---------------------- */
 
-.btn-img img {
-  height: 23px;
-  width: 24px;
-  z-index: 1;
-}
-
-#box {
-  height: 23px;
-  width: 24px;
-  border: 1px solid rgba(255, 255, 255, 0);
-  z-index: 20;
-  transition: border 0.5s;
-}
-
-#box:hover {
-  border: 1px solid rgba(255, 255, 255, 0.877);
-}
-
-/*****  Landing Page  ******/
-main {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 0;
-  background-color: var(--color-background);
-}
-
-.item1 {
+.landing-wrapper {
   width: 600px;
   height: 300px;
   color: var(--color-primary);
@@ -167,27 +136,27 @@ main {
   margin-bottom: 0px;
 }
 
-.item1a {
+.name-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
 
-.item1b > p {
+.about-me > p {
   text-align: left;
   font-size: 1.3rem;
   line-height: 1.5;
 }
-
+/* 
 #profile {
   width: 200px;
   height: 203px;
   border-radius: 50%;
   box-sizing: border-box;
   display: inline-block;
-}
-.item1 h1 {
+} */
+.landing-wrapper h1 {
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -197,87 +166,12 @@ main {
   line-height: 1.25;
 }
 
-.item2 {
-  display: inline-block;
-  width: 100%;
-}
-
-.item2a {
-  margin: 0 auto 0 auto;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.item1a h2 {
-  margin-top: 20px;
-  margin-bottom: 0;
-  font-weight: 700;
-  text-align: right;
-}
-
-.item1a h3 {
-  text-align: right;
-}
-
-#hide {
-  display: none;
-}
-
-/* .downButton {
-  clip-path: polygon(
-    100% 2%,
-    100% 0,
-    0 0%,
-    0% 2%,
-    48% 93%,
-    49% 94%,
-    50% 95%,
-    51% 94%,
-    52% 93%
-  );
-  -webkit-clip-path: polygon(
-    100% 2%,
-    100% 0,
-    0 0%,
-    0% 2%,
-    48% 93%,
-    49% 94%,
-    50% 95%,
-    51% 94%,
-    52% 93%
-  );
-  width: 100px;
-  height: 80px;
-  margin-top: 7px;
-  border-radius: 2.5%;
-  background-image: linear-gradient(
-    #9400d3,
-    #4b0082,
-    #0000ff,
-    #00ff00,
-    #ffff00,
-    #ff7f00,
-    #feffee
-  );
-} */
-
-h6,
-#about-me {
-  list-style: none;
-  font-size: 1.25rem;
-  line-height: 175%;
-  font-weight: 600;
-  padding: 0;
-  margin: 20px auto;
-}
-.item1 > p {
+.landing-wrapper > p {
   margin-top: 0px;
   line-height: 175%;
 }
 
-/*-----WORK-----*/
+/* ----------------------WORK---------------------- */
 
 section {
   color: var(--color-primary);
@@ -287,16 +181,15 @@ section {
   width: 100vw;
 }
 
-.flexSimple {
-  width: 75vw;
-  margin: 10px auto;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
-.flexSimple:nth-last-child(1) {
-  width: 400px;
+/* todo Rename */
+.container {
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  grid-gap: 5vw 2.5%;
+  margin: 0 auto 4% auto;
+  padding: 0 0 5% 0;
 }
 
 .flexSimpleRow {
@@ -374,15 +267,11 @@ section {
   opacity: 0.86;
 }
 
-.inactive {
-  display: none;
-}
-
 .shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/*************  Contact  ************/
+/* ----------------------Contact---------------------- */
 
 .connect {
   color: var(--color-primary);
@@ -406,6 +295,18 @@ section {
 
 .connect-icon:hover {
   color: rgba(255, 255, 255, 0.877);
+}
+
+.flexSimple {
+  width: 75vw;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.flexSimple:nth-last-child(1) {
+  width: 400px;
 }
 
 footer {
