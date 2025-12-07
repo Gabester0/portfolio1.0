@@ -7,9 +7,7 @@ html {
 }
 
 body {
-  /* font-family: Montserrat, sans-serif; */
   font-family: var(--font-sans);
-
   display: grid;
   background-color: #222;
   margin: 0;
@@ -158,17 +156,9 @@ a {
   font-size: 1.3rem;
   line-height: 1.5;
 }
-/* 
-#profile {
-  width: 200px;
-  height: 203px;
-  border-radius: 50%;
-  box-sizing: border-box;
-  display: inline-block;
-} */
+
 .landing-wrapper h1 {
   display: inline-block;
-  /* font-family: "Raleway", sans-serif; */
   font-family: var(--font-sans);
   font-weight: 700;
   font-size: 1.25rem;
