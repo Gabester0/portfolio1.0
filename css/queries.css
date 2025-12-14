@@ -1,127 +1,126 @@
-@media (max-width: 750px){
-    html {
-        font-size: 14px;
-    }
-    .container {
-      width: 440px;
-      margin: 0 auto;
-      grid-template-columns: 1fr;
-    }
-    .item1 {
-        width: 398px;
-    }
-    .item1a {
-        margin-bottom: 20px;
-    }
-    #profile {
-        margin: auto;
-        width: 100px;
-        height: 101.5px;
-    }
-    .item1a > h1 {
-        font-size: 3.65rem;
-    }
-    .btn-img {
-        margin-left: 20px;
-    }
-    .item {
-      padding: 0;
-    }
-    .item .flexSimpleRow {
-        flex-direction: column;
-    }
-    .projects-icon {
-        margin: 0px auto 20px auto;
-    }
-    .overlay{
-        font-size: initial;
-        line-height: initial;
-    }
-    .hoverText{
-        width: 75%;
-    }
-      
-    .item1b > p {
-        width: 398px;
-        margin: 10px auto 0 auto;
-    }
+@media (max-width: 750px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    width: 440px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+  .item1 {
+    width: 398px;
+  }
+  .item1a {
+    margin-bottom: 20px;
+  }
+  #profile {
+    margin: auto;
+    width: 100px;
+    height: 101.5px;
+  }
+  .item1a > h1 {
+    font-size: 3.65rem;
+  }
+  .btn-img {
+    margin-left: 20px;
+  }
+  .item {
+    padding: 0;
+  }
+  .item .flexSimpleRow {
+    flex-direction: column;
+  }
+  .projects-link {
+    margin: 0px auto 20px auto;
+  }
+  .overlay {
+    font-size: initial;
+    line-height: initial;
+  }
+  .hoverText {
+    width: 75%;
   }
 
-@media (max-width: 505px){
-    html {
-        font-size: 12px;
-    }
-    .container {
-        width: 350px;
-        grid-template-columns: 1fr;
-    }
-    .nav {
-        padding-bottom: 25px;
-        left: calc(100vw - 220px);
-    }
-    .item {
-        max-width: 100%;
-        margin: auto;
-    }
-    .item1 {
-        width: 250px;
-    }
-    .item1a > h1 {
-        font-size: 2.65rem;
-    }
-    .item1b > p {
-        width: 250px;
-    }
-    #lBut {
-        margin-top: 4vw;
-    }
-    #profile {
-        margin: 0 auto;
-        width: 100px;
-        height: 102px;
-    }
-    .itemImg {
-      background-color: #0c084c;
-      height: auto;
-      width: 350px;
-    }
-    .btn-img {
-        margin-left: 16px;
-    }
-    .item img {
-        height: auto;
-        width: 350px;
-    }
-    .flexSimple:nth-last-child(1) {
-        width: 250px;
-    }
-    .hoverText{
-        width: 90%;
-        font-size: 14px;
-    }
+  .item1b > p {
+    width: 398px;
+    margin: 10px auto 0 auto;
+  }
 }
 
-
-@media (max-width: 420px){
-    .container {
-        width: 250px;
-        grid-template-columns: 1fr;
-    }
-    .itemImg {
-        width: 250px;
-    }
-    #profile {
-        margin: 0 auto;
-        width: 75px;
-        height: 76.125px;
-    }
-    .item img {
-        width: 250px;
-    }
+@media (max-width: 505px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    width: 350px;
+    grid-template-columns: 1fr;
+  }
+  .nav {
+    padding-bottom: 25px;
+    left: calc(100vw - 220px);
+  }
+  .item {
+    max-width: 100%;
+    margin: auto;
+  }
+  .item1 {
+    width: 250px;
+  }
+  .item1a > h1 {
+    font-size: 2.65rem;
+  }
+  .item1b > p {
+    width: 250px;
+  }
+  #lBut {
+    margin-top: 4vw;
+  }
+  #profile {
+    margin: 0 auto;
+    width: 100px;
+    height: 102px;
+  }
+  .itemImg {
+    background-color: #0c084c;
+    height: auto;
+    width: 350px;
+  }
+  .btn-img {
+    margin-left: 16px;
+  }
+  .item img {
+    height: auto;
+    width: 350px;
+  }
+  .flexSimple:nth-last-child(1) {
+    width: 250px;
+  }
+  .hoverText {
+    width: 90%;
+    font-size: 14px;
+  }
 }
 
-@media (max-height: 625px){
-    .item1 {
-        top: 55%;
-    }
+@media (max-width: 420px) {
+  .container {
+    width: 250px;
+    grid-template-columns: 1fr;
+  }
+  .itemImg {
+    width: 250px;
+  }
+  #profile {
+    margin: 0 auto;
+    width: 75px;
+    height: 76.125px;
+  }
+  .item img {
+    width: 250px;
+  }
+}
+
+@media (max-height: 625px) {
+  .item1 {
+    top: 55%;
+  }
 }
