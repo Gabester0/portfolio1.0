@@ -9,7 +9,7 @@ html {
 body {
   font-family: var(--font-sans);
   display: grid;
-  background-color: #222;
+  background-color: var(--color-dark);
   margin: 0;
 }
 
@@ -21,7 +21,6 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   padding: 0;
-  background-color: var(--color-dark);
 }
 
 h2,
@@ -51,11 +50,22 @@ a {
   text-decoration: none;
 }
 
+/* ----------------------Utility Classes---------------------- */
+.color-primary {
+  color: var(--color-primary);
+}
+
 .color-light {
   color: var(--color-light);
 }
 .color-muted {
   color: var(--muted-foreground);
+}
+
+.space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* ----------------------Scrollbar---------------------- */
@@ -77,57 +87,49 @@ a {
 /* ----------------------Navigation----------------------*/
 .nav {
   z-index: 5;
-  background-color: #0c084c;
-  grid-column: 5/6;
   position: fixed;
+  width: 100vw;
+}
+
+.nav-container {
   top: 0;
-  left: calc(100vw - 250px);
-  padding: 0;
-  clip-path: polygon(37% 0, 100% 0, 100% 100%, 37% 62%);
-  -webkit-clip-path: polygon(37% 0, 100% 0, 100% 100%, 37% 62%);
-  padding-left: 100px;
-  padding-bottom: 75px;
+  position: sticky;
+  -webkit-position: sticky;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(var(--background), 0.8);
+  border-bottom: 1px solid var(--muted);
+  font-size: 1.1rem;
+
+  & p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-left: 2rem;
+  }
 }
 
 .nav ul {
-  position: sticky;
-  -webkit-position: sticky;
-  top: 0;
-  right: 0;
-  width: 100px;
+  display: flex;
+  flex-direction: row;
   list-style: none;
-  padding: 0 25px;
-  margin-top: 0;
-  margin-bottom: 40px;
+  padding-right: 1rem;
 }
 
 .nav li {
-  padding-top: 1.25rem;
-  font-size: 1.25rem;
-}
-.nav li:nth-child(1) {
-  padding-top: 1rem;
+  padding-right: 2rem;
 }
 
 .nav li a {
-  color: #f0eec8;
-  display: block;
-}
+  color: var(--muted-foreground);
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-.btn:link,
-.btn:visited {
-  text-decoration: none;
-  list-style: none;
-  transition: color 0.5s;
+  &:hover {
+    color: var(--color-primary);
+  }
 }
-
-.btn:hover,
-.btn:active {
-  color: rgba(255, 255, 255, 0.877);
-  text-decoration: none;
-  transition: color 0.5s;
-}
-
 /* ----------------------Landing Page---------------------- */
 
 .landing-wrapper {
@@ -141,7 +143,6 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   margin-bottom: 0px;
-  /* font */
 }
 
 .name-header {
@@ -178,7 +179,7 @@ a {
 
 section {
   color: var(--color-primary);
-  background-color: #222;
+  /* background-color: #222; */
   padding: 5vw 0;
   margin: 0;
   width: 100vw;
