@@ -121,9 +121,8 @@ a {
 
 .nav li a {
   color: var(--muted-foreground);
-  transition-property: color, background-color, border-color,
-    text-decoration-color, fill, stroke;
-  transition-duration: 150ms;
+  transition-property: color, fill, stroke;
+  transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
@@ -139,7 +138,7 @@ a {
   text-align: left;
   grid-column: 1/5;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin-bottom: 0px;
@@ -277,47 +276,40 @@ section {
 
 /* ----------------------Contact---------------------- */
 
-.connect {
-  color: var(--color-primary);
+.connect-container {
   padding: 0;
   text-align: center;
-  margin: 0 auto 100px auto;
-}
+  margin: auto auto 150px auto;
+  max-width: min(600px, 80%);
 
-.connect i {
-  color: var(--color-primary);
-  border-bottom: 1px solid var(--color-primary);
-  margin: 10px auto 50px auto;
-  padding: 10px;
-  font-size: 4.5rem;
-  transition: all 0.3s;
+  & p {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+  }
 }
 
 .connect a {
   color: var(--color-primary);
-}
+  border-bottom: 1px solid var(--color-primary);
+  font-size: 1.5rem;
+  padding: 10px;
+  transition-property: color, border-bottom-color, fill, stroke;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-.connect-icon:hover {
-  color: rgba(255, 255, 255, 0.877);
-}
-
-.flexSimple {
-  width: 75vw;
-  margin: 10px auto;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
-.flexSimple:nth-last-child(1) {
-  width: 400px;
+  &:hover {
+    color: var(--color-light);
+    border-bottom-color: var(--color-light);
+  }
 }
 
 footer {
-  color: var(--color-primary);
   padding: 20px;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-footer p {
-  font-size: 1rem;
+  & p {
+    font-size: 1rem;
+  }
 }
